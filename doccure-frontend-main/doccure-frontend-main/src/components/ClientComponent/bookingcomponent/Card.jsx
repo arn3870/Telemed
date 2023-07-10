@@ -12,10 +12,17 @@ function Card() {
     new Date().toISOString().substr(0, 10)
   );
   const [doctor, setDoctor] = useState();
-  const [filterSlots, setfilterSlot] = useState();
+  // const [filterSlots, setfilterSlot] = useState();
   const [checkedValues, setCheckedValues] = useState([]);
   const [submit, setSubmit] = useState(false);
-
+  //dummy data for the time being
+  const filterSlots = [
+    { _id: '1', time: '9:00 AM - 10:00 AM' },
+    { _id: '2', time: '10:00 AM - 11:00 AM' },
+    { _id: '3', time: '11:00 AM - 12:00 PM' },
+    // Add more slot objects as needed
+  ];
+  
   const disablePastDate = () => {
     const today = new Date();
     const dd = String(today.getDate()).padStart(2, "0");
@@ -59,12 +66,12 @@ function Card() {
     selectedDate,
   };
   const filtered = async () => {
-    const response = await filteredSlot(data, token);
-    if (response.data.success) {
-      setfilterSlot(response.data.slots);
-    }else{
-      console.log("not availlable")
-    }
+    // const response = await filteredSlot(data, token);
+    // if (response.data.success) {
+    //   setfilterSlot(response.data.slots);
+    // }else{
+    //   console.log("not availlable")
+    // }
   };
 
   useEffect(() => {

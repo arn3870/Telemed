@@ -31,7 +31,7 @@ function AdminSidebar() {
           <Sidebar.Logo
             href="#"
             img={logo}
-            imgAlt="Doccure logo"
+            imgAlt="Telemed logo"
           ></Sidebar.Logo>
           <Sidebar.Items>
             <Sidebar.ItemGroup>

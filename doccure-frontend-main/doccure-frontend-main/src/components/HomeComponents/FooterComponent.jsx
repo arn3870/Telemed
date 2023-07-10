@@ -20,8 +20,8 @@ function FooterComponent() {
               <div>
                 <Footer.Title title="Contact" />
                 <Footer.LinkGroup col={true}>
-                  <Footer.Link href="#">doccure@gmail.com</Footer.Link>
-                  <Footer.Link href="#">+91 1234567890</Footer.Link>
+                  <Footer.Link href="#">Telemed@gmail.com</Footer.Link>
+                  <Footer.Link href="#">+92 1234567890</Footer.Link>
                 </Footer.LinkGroup>
               </div>
               <div>
@@ -42,7 +42,7 @@ function FooterComponent() {
           </div>
           <Footer.Divider />
           <div className="w-full sm:flex sm:items-center sm:justify-between">
-            <Footer.Copyright href="#" by="DECCURE™" year={2022} />
+            <Footer.Copyright href="#" by="TELEMED™" year={2023} />
             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
               {/* <Footer.Icon href="#" icon={BsFacebook} />
               <Footer.Icon href="#" icon={BsInstagram} />
