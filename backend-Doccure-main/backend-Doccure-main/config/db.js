@@ -8,7 +8,7 @@ const colors = require('colors')
 const MONGO_URL = process.env.MONGODB_URL
 const connectDB = async()=>{
     try {
-        await mongoose.connect('mongodb+srv://arn3870:clusterPass123@cluster0.ihbdbk5.mongodb.net/test')
+        await mongoose.connect('mongodb+srv://')
         console.log(`MONGODB connected ${mongoose.connection.host}`.bgBlue.white);
         
     } catch (error) {
